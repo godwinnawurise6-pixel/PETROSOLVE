@@ -24,11 +24,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </p>
           <div className="pt-2 flex flex-wrap gap-3">
             <button
-              onClick={() => onNavigate('hand_calcs')}
+              onClick={() => onNavigate('pipe_flow')}
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm rounded-xl transition-all shadow-md cursor-pointer"
             >
-              <FileCheck className="w-4 h-4 mr-2" />
-              <span>Verified Hand Calculations</span>
+              <span>Explore Engineering Modules</span>
+              <ArrowRight className="w-4 h-4 ml-2" />
             </button>
           </div>
         </div>
@@ -53,30 +53,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Verified Hand Calculations Spotlight Banner */}
-      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
-        <div className="space-y-2 max-w-2xl">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-lg text-cyan-300 text-xs font-bold uppercase tracking-wider">
-            <FileCheck className="w-4 h-4 text-cyan-400" />
-            <span>Audited & Benchmarked</span>
-          </div>
-          <h2 className="text-xl sm:text-2xl font-display font-bold text-white">
-            Includes Step-by-Step Verified Hand Calculations
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Every module includes audited step-by-step hand calculation sheets with explicit formula substitutions, intermediate iterative convergence steps, and 0.00% benchmark error validation.
-          </p>
-        </div>
-        <button
-          onClick={() => onNavigate('hand_calcs')}
-          className="shrink-0 px-5 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-md cursor-pointer flex items-center space-x-2"
-          id="spotlight-hand-calcs-btn"
-        >
-          <span>View Hand Worked Solutions</span>
-          <ArrowRight className="w-4 h-4" />
-        </button>
       </div>
 
       {/* Feature Header */}
