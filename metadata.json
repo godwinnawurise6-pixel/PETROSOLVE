@@ -1,0 +1,6 @@
+{
+  "name": "PETROSOLVE",
+  "description": "Practical engineering calculations and data analysis tools for pipe flow, heat transfer, and rock & fluid datasets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
