@@ -24,17 +24,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </p>
           <div className="pt-2 flex flex-wrap gap-3">
             <button
-              onClick={() => onNavigate('pipe_flow')}
+              onClick={() => onNavigate('hand_calcs')}
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm rounded-xl transition-all shadow-md cursor-pointer"
             >
-              <span>Explore Pipe Flow</span>
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </button>
-            <button
-              onClick={() => onNavigate('hand_calcs')}
-              className="inline-flex items-center px-6 py-3 bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 font-semibold text-sm rounded-xl transition-all cursor-pointer"
-            >
-              <FileCheck className="w-4 h-4 mr-2 text-cyan-400" />
+              <FileCheck className="w-4 h-4 mr-2" />
               <span>Verified Hand Calculations</span>
             </button>
           </div>
