@@ -36,24 +36,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl">
             High-precision computational tools for pipe hydraulics, thermal energy transport, and subsurface dataset analytics. SI-verified governing engines engineered with analytical rigor.
           </p>
-          <div className="pt-2 flex flex-wrap gap-3">
-            <button
-              onClick={handleExploreClick}
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm rounded-xl transition-all shadow-md cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
-              id="explore-modules-btn"
-            >
-              <Layers className="w-4 h-4 mr-2" />
-              <span>Explore Engineering Modules</span>
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </button>
-            <button
-              onClick={() => onNavigate('hand_calcs')}
-              className="inline-flex items-center px-6 py-3 bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 font-semibold text-sm rounded-xl transition-all cursor-pointer"
-            >
-              <FileCheck className="w-4 h-4 mr-2 text-cyan-400" />
-              <span>Verified Hand Calculations</span>
-            </button>
-          </div>
         </div>
 
         {/* Hero Decorative Stack / Stat Card */}
@@ -76,30 +58,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Verified Hand Calculations Spotlight Banner */}
-      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
-        <div className="space-y-2 max-w-2xl">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-lg text-cyan-300 text-xs font-bold uppercase tracking-wider">
-            <FileCheck className="w-4 h-4 text-cyan-400" />
-            <span>Audited & Benchmarked</span>
-          </div>
-          <h2 className="text-xl sm:text-2xl font-display font-bold text-white">
-            Verified Hand Calculations & Worked Solutions
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-            Every module includes step-by-step hand calculation sheets with explicit formula substitutions, intermediate iterative convergence steps, and 0.00% benchmark error validation.
-          </p>
-        </div>
-        <button
-          onClick={() => onNavigate('hand_calcs')}
-          className="shrink-0 px-5 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-md cursor-pointer flex items-center space-x-2"
-          id="spotlight-hand-calcs-btn"
-        >
-          <span>View Hand Calculations</span>
-          <ArrowRight className="w-4 h-4" />
-        </button>
       </div>
 
       {/* Feature Header */}
